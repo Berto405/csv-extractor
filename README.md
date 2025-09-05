@@ -2,8 +2,6 @@
 
 A modern web application for extracting and processing columns from CSV and Excel files.
 
-![CSV Extractor](public/vite.svg)
-
 ## Overview
 
 This application allows users to upload spreadsheet files (CSV, Excel) and select specific columns to extract and download. It features an intuitive drag-and-drop interface, column selection functionality, and a modern UI built with React and Shadcn UI components.
