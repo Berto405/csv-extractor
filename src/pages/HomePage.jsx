@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Papa from "papaparse";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,6 +6,7 @@ import { ArrowLeft, Shield, Zap, Download } from "lucide-react";
 import FileUpload from "../components/FileUpload";
 import ColumnSelector from "../components/ColumnSelector";
 import Header from "../components/Header";
+import { useState } from "react";
 
 const HomePage = () => {
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -16,6 +17,7 @@ const HomePage = () => {
   const handleFileSelect = async (file) => {
     setIsProcessing(true);
     setUploadedFile(file);
+
 
     if (file && file.type === "text/csv") {
       Papa.parse(file, {
